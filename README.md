@@ -5,11 +5,13 @@ possible.  The problem is that all you can do is set up seven of the
 "12"s, waste a few moves, and hope you get lucky with a "+" card spawn
 for the last "12".
 
-Hopefully most of the program is self-explanatory.  You just type in
-whatever info it needs to see the game state, and it tells you what moves
-to make.  You can Undo to the previous board state if you accidentally
-tell it something wrong.  However, if you make a mistake and swipe the
-wrong Threes direction, you'll have to restart the program.  Sorry!
+You should run the program in a folder with twelvelock.txt (a file
+containing some computed weights for various board features).  Hopefully
+the rest the program is self-explanatory.  You just type in whatever info
+it needs to see the game state, and it tells you what moves to make.  You
+can Undo to the previous board state if you accidentally tell it something
+wrong.  However, if you make a mistake and swipe the wrong Threes
+direction, you'll have to restart the program.  Sorry!
 
 Starting the program from the beginning of the game guarantees its deck
 counts will be accurate.  The other way to guarantee the deck's state is
@@ -32,7 +34,7 @@ making a "12" checkerboard before a "96" is made.  But you'll know you
 have a 4% chance of victory.
 
 My recommended, more efficient, approach to grind for the achievement is
-to start a Threes game, then play 12N+2 moves (not counting "+" spawns)
+to start a Threes game, then play 2N+2 moves (not counting "+" spawns)
 yourself until you've created a "96" (or the board starts to slip out of
 control).  At that point, start the program and let it try to set up the
 "12" checkerboard.  If it fails and the pretty "12" pattern starts to

@@ -491,8 +491,15 @@ int main() {
 
   bool istwelve = toupper(AskUser("[T]welvelock or [S]ixlock? ", {"t", "T", "s", "S"})[0]) == 'T';
   {
-    ifstream fin(istwelve ? "twelvelock.txt" : "sixlock.txt");
-    for (int i = 0; i < sizeof(FeatureScore)/sizeof(double); i++) fin >> FeatureScore[i];
+    char* filename = istwelve ? "twelvelock.txt" : "sixlock.txt";
+    ifstream fin(filename);
+    for (int i = 0; i < sizeof(FeatureScore)/sizeof(double); i++) {
+      if (!(fin >> FeatureScore[i])) {
+        cerr << "Error: " << filename << " not found.  "
+             << "Please put it in the executable's folder." << endl;
+        return 0;
+      }
+    }
   }
   double (&score_func)(const Board&) = istwelve ? TwelvelockFeatureScore : SixlockFeatureScore;
 
