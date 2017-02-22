@@ -15,7 +15,7 @@ direction, you'll have to restart the program.  Sorry!
 
 Starting the program from the beginning of the game guarantees its deck
 counts will be accurate.  The other way to guarantee the deck's state is
-correct is to start the program after making 12N+2 moves, NOT counting "+"
+correct is to start the program after making 12N+3 moves, NOT counting "+"
 card spawns.  If the deck is inaccurate, it's not that big a deal, but it
 will probably hurt the program's predictions slightly.
 
@@ -34,7 +34,7 @@ making a "12" checkerboard before a "96" is made.  But you'll know you
 have a 4% chance of victory.
 
 My recommended, more efficient, approach to grind for the achievement is
-to start a Threes game, then play 2N+2 moves (not counting "+" spawns)
+to start a Threes game, then play 12N+3 moves (not counting "+" spawns)
 yourself until you've created a "96" (or the board starts to slip out of
 control).  At that point, start the program and let it try to set up the
 "12" checkerboard.  If it fails and the pretty "12" pattern starts to
